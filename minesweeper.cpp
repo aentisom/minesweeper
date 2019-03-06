@@ -170,7 +170,7 @@ void Game::is_victory(void) {
 
 void Game::show(Pos pos) {
     if (get(pos).first == SPACE || pos.h < 1 || pos.h > height ||
-        pos.w < 1 || pos.w > height)    return ;
+        pos.w < 1 || pos.w > width)    return ;
     if (get(pos).second == 0) {
         get(pos).first = SPACE;
         show(pos.around(1,1));
